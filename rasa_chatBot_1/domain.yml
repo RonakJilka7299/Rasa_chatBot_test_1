@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - ask_office_timings
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? Please feel free to ask questions I will try my best to guide you."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://orangetechnolab.net/wp-content/uploads/2022/05/logo-orange.png"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Goodbye, and have a productive day ahead."
+
+  utter_thanks:
+    - text: "You're welcome! If you have any more questions or need further assistance, please feel free to ask. Good luck with your work!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Orange Technolab!"
+
+  utter_ask_office_timings:
+    - text: |
+        The office timings are from 10 AM to 7 PM, Monday to Friday.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
